@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
 
 *{
     padding: 0;
@@ -18,11 +18,24 @@ body{
 }
 
 .container .image-panel{
-    background-image: url('../assets/login/3D icons.svg');
     background-repeat: no-repeat;
     width: 531px;
     height: 566px;
     margin-right: -15px;
+    background-position: bottom;
+}
+
+.container .rocket{
+    background-image: url('../assets/login/rocket.svg');
+}
+.container .rubik{
+    background-image: url('../assets/login/rubik.svg');
+}
+.container .cabriser{
+    background-image: url('../assets/login/cabriser.svg');
+}
+.container .atoms{
+    background-image: url('../assets/login/atoms.svg');
 }
 
 .container .login-panel{
@@ -44,6 +57,7 @@ body{
 
 .container .login-panel .wrapper .credentials{
     margin: 20px 0px;
+    padding-bottom: 40px;
 }
 
 .container .login-panel .wrapper .credentials input{
@@ -69,37 +83,53 @@ body{
     left: 19px;
 }
 
-.container .login-panel .wrapper .icon:nth-of-type(1){
-    background-image: url('../assets/login/user.svg');
-}
-.container .login-panel .wrapper .icon:nth-of-type(2){
-    background-image: url('../assets/login/Path_49.svg');
+.container .login-panel .wrapper .credentials span{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #4D4D4D;
 }
 
-.container .login-panel .wrapper a{
+.container .login-panel .wrapper .login-icon{
+    background-image: url('../assets/login/user.svg');
+}
+.container .login-panel .wrapper .password-icon{
+    background-image: url('../assets/login/password.svg');
+}
+.container .login-panel .wrapper .email-icon{
+    background-image: url('../assets/login/email.svg');
+}
+
+.container .login-panel .wrapper .links{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.container .login-panel .wrapper .links a{
     text-decoration: none;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0px;
-    text-align: right;
     color: #157AD8;
-    display: block;
-    margin-bottom: 50px;
 }
 
 .container .login-panel .wrapper button{
     background: #008CE5;
-    width: 276px;
+    width: 315px;
     height: 52px;
-    padding: 8px 14px;
+    padding: 10px 15px;
     border-radius: 100px;
     gap: 8px;
     border: none;
     box-shadow: 1px 6px 0px 0px #006CB0;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 800;
     line-height: 20px;
     letter-spacing: 0em;
@@ -107,6 +137,8 @@ body{
     display: block;
     margin: 0 auto;
     cursor: pointer;
+    position: absolute;
+    bottom: 70px;
 }
 
 .container .login-panel .wrapper button:active{

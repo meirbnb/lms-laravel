@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home.login'); // temporary - delete after homepage is made
+Route::get('/login', [HomeController::class, 'index'])->name('home.login');
+Route::get('/signup', [HomeController::class, 'signup'])->name('home.signup');
+Route::get('/restore', [HomeController::class, 'restore'])->name('home.restore');
+Route::get('/confirm', [HomeController::class, 'confirm'])->name('home.confirm');

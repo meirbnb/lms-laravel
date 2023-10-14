@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #008CE5;
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    top: 40%; left: 45%;
+    transform: translate(-45%, -40%);
+    display: flex;
+}
+
+.container .image-panel{
+    background-image: url('../assets/login/3D icons.svg');
+    background-repeat: no-repeat;
+    width: 531px;
+    height: 566px;
+    margin-right: -15px;
+}
+
+.container .login-panel{
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 414px;
+    height: 537px;
+}
+
+.container .login-panel .wrapper{
+    padding: 80px 50px;
+}
+
+.container .login-panel .wrapper h2{
+    color: #006CB0;
+    font: bold 28px Poppins;
+}
+
+.container .login-panel .wrapper .credentials{
+    margin: 20px 0px;
+}
+
+.container .login-panel .wrapper .credentials input{
+    width: 250px;
+    height: 56px;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 20px;;
+    font-weight: 400;
+    border: 1px solid #bfdcf1;
+    outline: none;
+}
+
+.container .login-panel .wrapper .icon{
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    background-size: contain;
+    position: relative;
+    top: 41px;
+    left: 19px;
+}
+
+.container .login-panel .wrapper .icon:nth-of-type(1){
+    background-image: url('../assets/login/user.svg');
+}
+.container .login-panel .wrapper .icon:nth-of-type(2){
+    background-image: url('../assets/login/Path_49.svg');
+}
+
+.container .login-panel .wrapper a{
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #157AD8;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.container .login-panel .wrapper button{
+    background: #008CE5;
+    width: 276px;
+    height: 52px;
+    padding: 8px 14px;
+    border-radius: 100px;
+    gap: 8px;
+    border: none;
+    box-shadow: 1px 6px 0px 0px #006CB0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.container .login-panel .wrapper button:active{
+    box-shadow: inset 1px 3px 0px 0px #006CB0;
+}
